@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 / 10"
+        android:textSize="16sp"
+        android:textColor="#868686"
+        android:fontFamily="@font/suitregular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp"
+        />
+
+    <TextView
+        android:fontFamily="@font/suitbold"
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1.\n내가 가장 좋아하는 계절은?"
+        android:textSize="28sp"
+        android:textColor="#313547"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/page"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="92dp"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/questbutton"
+        android:stateListAnimator="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/q1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="135dp"
+
+        android:text="1. 가을"
+        android:scaleType="fitCenter"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/suitbold"
+        android:textSize="16sp"
+
+        />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/questbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+
+        android:text="2. 여름"
+        android:scaleType="fitCenter"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:fontFamily="@font/suitbold"
+        android:paddingLeft="20dp"/>
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/questbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+
+        android:text="3. 가을"
+        android:scaleType="fitCenter"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:fontFamily="@font/suitbold"
+        android:paddingLeft="20dp"
+        />
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/questbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b3"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+
+        android:text="4. 겨울"
+        android:scaleType="fitCenter"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:fontFamily="@font/suitbold"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b4"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="다음"
+        android:fontFamily="@font/suitbold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
