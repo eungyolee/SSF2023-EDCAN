@@ -13,17 +13,14 @@
         android:theme="@style/Theme.Softwareshare"
         tools:targetApi="31">
         <activity
+            android:name=".Dialog"
+            android:exported="false" />
+        <activity
             android:name=".ranking"
             android:exported="false" />
         <activity
-            android:name=".Main"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
             android:name=".question"
-            android:exported="false" />
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

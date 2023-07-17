@@ -8,6 +8,19 @@
     tools:context=".ranking">
 
 
+    <TextView
+        android:id="@+id/scoretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 점수는 OO점입니다!"
+        android:fontFamily="@font/suitbold"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:textColor="#3D64FF"/>
+
 
     <TextView
         android:id="@+id/rank"
@@ -16,11 +29,11 @@
         android:text="순위"
         android:textSize="36dp"
         android:fontFamily="@font/suitbold"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoretext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="550dp"
+        android:layout_marginBottom="420dp"
         android:textColor="@color/black"/>
 
     <TextView
@@ -34,7 +47,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="460dp"
+        android:layout_marginBottom="200dp"
         android:textColor="#868686"/>
 
     <Button
@@ -47,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="350dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/return_button"
         android:fontFamily="@font/suitbold"
         />

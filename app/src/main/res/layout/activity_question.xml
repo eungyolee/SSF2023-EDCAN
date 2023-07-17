@@ -18,8 +18,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         />
+
+    <TextView
+
+        android:visibility="invisible"
+        android:id="@+id/text_answer"
+        android:layout_width="122dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/b1"
+        android:background="@drawable/text_answer"
+        android:text="정답입니다."
+        android:fontFamily="@font/suitregular"
+        android:textColor="#313547"
+
+        android:scaleType="fitCenter"
+        android:gravity="center_vertical"
+        android:paddingStart="44dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_answer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="invisible"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toStartOf="@id/text_answer"
+        app:layout_constraintTop_toTopOf="@id/text_answer"
+        app:layout_constraintBottom_toBottomOf="@id/text_answer"
+        android:layout_marginStart="16dp"/>
+
 
     <TextView
         android:fontFamily="@font/suitbold"
@@ -29,11 +60,10 @@
         android:text="Q1.\n내가 가장 좋아하는 계절은?"
         android:textSize="28sp"
         android:textColor="#313547"
-        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/page"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="60dp"
         />
 
     <Button
@@ -47,9 +77,9 @@
         app:layout_constraintTop_toBottomOf="@id/q1"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="135dp"
+        android:layout_marginTop="60dp"
 
-        android:text="1. 가을"
+        android:text="1. 봄"
         android:scaleType="fitCenter"
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
@@ -63,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/questbutton"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b1"
@@ -81,6 +112,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/questbutton"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b2"
@@ -100,6 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/questbutton"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b3"
@@ -119,6 +152,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/submit"
+        android:stateListAnimator="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b4"
