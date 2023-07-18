@@ -4,9 +4,11 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.example.softwareshare.databinding.ActivityQuestionBinding
+import com.google.firebase.firestore.FirebaseFirestore
 
 class question : AppCompatActivity() {
 
@@ -138,11 +140,36 @@ class question : AppCompatActivity() {
 
             if (page == title.size)
             {
+                val intent = Intent(this, ranking::class.java)
+                val db = FirebaseFirestore.getInstance()
+
+                val collectionName = "rankings"
+                val documentName = "nameandscore"
+                intent.putExtra("personscore", score.toString())                           //성적은 score로 보냄
+                intent.putExtra("personname", personname)
+                val data = hashMapOf(
+                    "name" to personname,
+                    "score" to score
+                )
+
+                db.collection(collectionName)
+                    .document()
+                    .set(data)
+                    .addOnSuccessListener {
+                        // 저장 성공 시 실행할 코드
+                        // 예: 저장 완료 메시지 출력
+                        Log.d("TAG", "데이터 저장 완료")
+                    }
+                    .addOnFailureListener { e ->
+                        // 저장 실패 시 실행할 코드
+                        // 예: 저장 실패 메시지 출력
+                        Log.w("TAG", "데이터 저장 실패", e)
+                    }
+
                 //파이어베이스 정보 저장
                 //점수 변수는 score
 
-                val intent = Intent(this, ranking::class.java)
-                intent.putExtra("score", score)                           //성적은 score로 보냄
+
                 startActivity(intent)
                 this.finish()
             }

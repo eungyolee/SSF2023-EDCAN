@@ -40,7 +40,7 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OOO님을 잘 아는 사람들입니다."
+        android:text="홍예훈님을 잘 아는 사람들입니다."
         android:textSize="16dp"
         android:fontFamily="@font/suitregular"
         app:layout_constraintTop_toTopOf="parent"
@@ -70,7 +70,7 @@
         android:id="@+id/rank1"
         android:layout_width="match_parent"
         android:layout_height="57dp"
-        android:text="1.   김민지                                                       -10점"
+        android:text="1.   김민지"
         android:stateListAnimator="@null"
         android:textColor="#313547"
         android:background="@drawable/return_button"
@@ -92,7 +92,7 @@
         android:id="@+id/rank2"
         android:layout_width="match_parent"
         android:layout_height="57dp"
-        android:text="2.   김민지                                                       -10점"
+        android:text="2.   김민지"
         android:stateListAnimator="@null"
         android:textColor="#313547"
         android:background="@drawable/return_button"
@@ -113,7 +113,7 @@
         android:id="@+id/rank3"
         android:layout_width="match_parent"
         android:layout_height="57dp"
-        android:text="2.   김민지                                                       -10점"
+        android:text="2.   김민지"
         android:stateListAnimator="@null"
         android:textColor="#313547"
         android:background="@drawable/return_button"
@@ -130,6 +130,45 @@
         android:scaleType="fitCenter"
         android:gravity="center_vertical"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rank1_score"
+        app:layout_constraintEnd_toEndOf="@id/rank1"
+        app:layout_constraintTop_toTopOf="@id/rank1"
+        app:layout_constraintBottom_toBottomOf="@+id/rank1"
+        android:text="10점"
+        android:textSize="18dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/suitregular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rank2_score"
+        app:layout_constraintEnd_toEndOf="@id/rank2"
+        app:layout_constraintTop_toTopOf="@id/rank2"
+        app:layout_constraintBottom_toBottomOf="@+id/rank2"
+        android:text="10점"
+        android:textSize="18dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/suitregular"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rank3_score"
+        app:layout_constraintEnd_toEndOf="@id/rank3"
+        app:layout_constraintTop_toTopOf="@id/rank3"
+        app:layout_constraintBottom_toBottomOf="@+id/rank3"
+        android:text="10점"
+        android:textSize="18dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/suitregular"
+        android:textColor="@color/black"/>
 
 
 

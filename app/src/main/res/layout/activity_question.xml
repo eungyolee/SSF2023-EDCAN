@@ -8,20 +8,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1 / 10"
-        android:textSize="16sp"
-        android:textColor="#868686"
-        android:fontFamily="@font/suitregular"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
-        />
-
-    <TextView
 
         android:visibility="invisible"
         android:id="@+id/text_answer"
@@ -60,10 +46,10 @@
         android:text="Q1.\n내가 가장 좋아하는 계절은?"
         android:textSize="28sp"
         android:textColor="#313547"
-        app:layout_constraintTop_toBottomOf="@+id/page"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         />
 
     <Button
