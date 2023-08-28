@@ -65,74 +65,14 @@ class question : AppCompatActivity() {
 
         }
         binding.b2.setOnClickListener {
-            if (clickable == false)
-            {
-                if(answer[page] == 2)
-                {
-                    score++
-                    binding.b2.setBackgroundResource(R.drawable.correct_answer)
-                    binding.textAnswer.text = "정답입니다."
-                    binding.imgAnswer.setBackgroundResource(R.drawable.check)
-
-                }
-                else
-                {
-                    binding.b2.setBackgroundResource(R.drawable.wrong_answer)
-                    binding.textAnswer.text = "오답입니다."
-                    binding.imgAnswer.setBackgroundResource(R.drawable.close)
-                }
-
-                binding.imgAnswer.visibility = View.VISIBLE
-                binding.textAnswer.visibility = View.VISIBLE
-                clickable = true
-            }
+            TODO("버튼 내용 채우기")
         }
         binding.b3.setOnClickListener {
-            if (clickable == false)
-            {
-                if(answer[page] == 3)
-                {
-                    score++
-                    binding.b3.setBackgroundResource(R.drawable.correct_answer)
-                    binding.textAnswer.text = "정답입니다."
-                    binding.imgAnswer.setBackgroundResource(R.drawable.check)
+            TODO("버튼 내용 채우기")
 
-
-                }
-                else
-                {
-                    binding.b3.setBackgroundResource(R.drawable.wrong_answer)
-                    binding.textAnswer.text = "오답입니다."
-                    binding.imgAnswer.setBackgroundResource(R.drawable.close)
-
-
-                }
-
-                binding.imgAnswer.visibility = View.VISIBLE
-                binding.textAnswer.visibility = View.VISIBLE
-                clickable=true
-            }
         }
         binding.b4.setOnClickListener {
-            if (clickable == false) {
-                if (answer[page] == 4) {
-                    score++
-                    binding.b4.setBackgroundResource(R.drawable.correct_answer)
-                    binding.textAnswer.text = "정답입니다."
-                    binding.imgAnswer.setBackgroundResource(R.drawable.check)
-
-
-                } else {
-                    binding.b4.setBackgroundResource(R.drawable.wrong_answer)
-                    binding.textAnswer.text = "오답입니다."
-                    binding.imgAnswer.setBackgroundResource(R.drawable.close)
-
-                }
-
-                binding.imgAnswer.visibility = View.VISIBLE
-                binding.textAnswer.visibility = View.VISIBLE
-                clickable = true
-            }
+            TODO("버튼 내용 채우기")
         }
         binding.submit.setOnClickListener {
 
