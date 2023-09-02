@@ -22,7 +22,7 @@ class ranking : AppCompatActivity() {
         val personname = intent.getStringExtra("personname")
         val personscore = intent.getStringExtra("personscore")
 
-        binding.scoretext.text = "당신의 점수는 ${personscore}점 입니다!"
+        binding.scoretext.text = "당신의 점수는 ${personscore}점입니다!"
 
 
         val db = FirebaseFirestore.getInstance()

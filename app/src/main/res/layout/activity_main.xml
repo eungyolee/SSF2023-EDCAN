@@ -7,5 +7,65 @@
     android:background="#F5F6FA"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나를 소개합니다"
+        android:textSize="32dp"
+        android:fontFamily="@font/suitbold"
+        android:textColor="#313547"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/imagelogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="31dp"
+        android:hint="시작하기"
+        android:textSize="15dp"
+        android:background="@drawable/start_button"
+        android:textColorHint="@color/white"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/suitregular"
+        />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/id_input_page"
+        android:hint="이름을 입력해주세요.."
+        android:fontFamily="@font/suitbold"
+        android:textSize="15dp"
+        android:padding="14dp"
+        android:textColorHint="#999494"
+        app:layout_constraintBottom_toTopOf="@id/start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

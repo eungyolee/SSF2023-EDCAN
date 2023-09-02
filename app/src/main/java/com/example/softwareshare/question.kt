@@ -14,12 +14,12 @@ class question : AppCompatActivity() {
 
     private lateinit var binding : ActivityQuestionBinding
     var page = 0
-    val title = mutableListOf<String>("내가 가장 좋아하는 계절은?", "내가 가장 좋아하는 게임 장르는?", "내가 좋아하는 코딩언어는?", "내 생일은?", "내가 좋아하는 얼굴상은?")
-    val question1 = mutableListOf<String>("봄", "FPS", "C언어", "8월 1일", "강아지상")
-    val question2 = mutableListOf<String>("여름", "RPG", "Python", "3월 4일", "고양이상")
-    val question3 = mutableListOf<String>("가을", "퍼즐", "Java","12월 23일","여우상")
-    val question4 = mutableListOf<String>("겨울", "생존", "HTML", "10월 4일", "곰상")
-    val answer = mutableListOf<Int>(3, 2, 1, 4, 3)
+    val title = mutableListOf<String>("내가 가장 좋아하는 계절은?", "내가 다니는 학교는?", "내가 좋아하는 코딩언어는?", "내 생일은?", "아무거나 찍어보면?")
+    val question1 = mutableListOf<String>("봄", "선린중학교", "C언어", "8월 1일", "3")
+    val question2 = mutableListOf<String>("여름", "염경중학교", "Python", "3월 4일", "1")
+    val question3 = mutableListOf<String>("가을", "염창중학교", "JavaScript","12월 23일","4")
+    val question4 = mutableListOf<String>("겨울", "백석중학교", "Kotlin", "10월 4일", "2")
+    val answer = mutableListOf<Int>(4, 2, 2, 3, 1)
     var score = 0
     var clickable = false
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,14 +65,80 @@ class question : AppCompatActivity() {
 
         }
         binding.b2.setOnClickListener {
-            TODO("버튼 내용 채우기")
+            if (clickable == false)
+            {
+                if(answer[page] == 2)
+                {
+                    score++
+
+                    binding.b2.setBackgroundResource(R.drawable.correct_answer)
+                    binding.textAnswer.text = "정답입니다."
+                    binding.imgAnswer.setBackgroundResource(R.drawable.check)
+                }
+                else
+                {
+                    binding.b2.setBackgroundResource(R.drawable.wrong_answer)
+                    binding.textAnswer.text = "오답입니다."
+                    binding.imgAnswer.setBackgroundResource(R.drawable.close)
+
+                }
+
+                clickable = true
+                binding.imgAnswer.visibility = View.VISIBLE
+                binding.textAnswer.visibility = View.VISIBLE
+
+            }
         }
         binding.b3.setOnClickListener {
-            TODO("버튼 내용 채우기")
+            if (clickable == false)
+            {
+                if(answer[page] == 3)
+                {
+                    score++
+
+                    binding.b3.setBackgroundResource(R.drawable.correct_answer)
+                    binding.textAnswer.text = "정답입니다."
+                    binding.imgAnswer.setBackgroundResource(R.drawable.check)
+                }
+                else
+                {
+                    binding.b3.setBackgroundResource(R.drawable.wrong_answer)
+                    binding.textAnswer.text = "오답입니다."
+                    binding.imgAnswer.setBackgroundResource(R.drawable.close)
+
+                }
+
+                clickable = true
+                binding.imgAnswer.visibility = View.VISIBLE
+                binding.textAnswer.visibility = View.VISIBLE
+
+            }
 
         }
         binding.b4.setOnClickListener {
-            TODO("버튼 내용 채우기")
+            if (clickable == false)
+            {
+                if(answer[page] == 4)
+                {
+                    score++
+
+                    binding.b4.setBackgroundResource(R.drawable.correct_answer)
+                    binding.textAnswer.text = "정답입니다."
+                    binding.imgAnswer.setBackgroundResource(R.drawable.check)
+                }
+                else
+                {
+                    binding.b4.setBackgroundResource(R.drawable.wrong_answer)
+                    binding.textAnswer.text = "오답입니다."
+                    binding.imgAnswer.setBackgroundResource(R.drawable.close)
+
+                }
+
+                clickable = true
+                binding.imgAnswer.visibility = View.VISIBLE
+                binding.textAnswer.visibility = View.VISIBLE
+
+            }
         }
         binding.submit.setOnClickListener {
 

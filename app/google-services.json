@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "384066356148",
-    "project_id": "softwareshareproject",
-    "storage_bucket": "softwareshareproject.appspot.com"
+    "project_number": "849499706383",
+    "project_id": "sunrinssf2023",
+    "storage_bucket": "sunrinssf2023.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:384066356148:android:577c96027fa14c65fca8e1",
+        "mobilesdk_app_id": "1:849499706383:android:5be9810125ff1bf2d37f7a",
         "android_client_info": {
           "package_name": "com.example.softwareshare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "384066356148-9v0romgaqee6d0r2jbc2b6n0gn88tbho.apps.googleusercontent.com",
+          "client_id": "849499706383-nfj60dodehrcr96gj0drk108bgn1tste.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBl2bwA8r4t_7c85Wv92ZKLawAoZj9nbkE"
+          "current_key": "AIzaSyCJDmx_RY1Gu9ohVhCeAWp7dTJKfyD6P2I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "384066356148-9v0romgaqee6d0r2jbc2b6n0gn88tbho.apps.googleusercontent.com",
+              "client_id": "849499706383-nfj60dodehrcr96gj0drk108bgn1tste.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
